@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/fontawesome-free-6.2.1-web/css/all.css" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/17f6d62750.js" crossorigin="anonymous"></script>
     <title>HTML EMAIl</title>
 
     <style>
@@ -19,10 +18,8 @@
         .body {
             width: 62%;
             box-shadow: 0px 1.0566px 42.57px rgba(28, 33, 39, 0.08);
-            margin: 3.37rem auto 2rem;
+            margin: 3.37rem auto .5rem;
             background-color: #FFFFFF;
-            ;
-            /* margin-left: 19%; */
         }
         
         .navbar {
@@ -46,24 +43,27 @@
         
         .frame2 {
             padding-left: 5rem;
-            padding-top: 5rem;
+            padding-top: 3rem;
         }
         
         .newsletter {
             /* padding-left: 5rem; */
-            padding-top: 5rem;
+            padding-top: .5rem;
             width: 86%;
             margin: 0 auto;
         }
         
         .lorem {
             line-height: 2rem;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            line-height: 24px;
+            font-family: sans-serif;
+            /
+            /* padding-top: 14rem; */
         }
         
         .experience {
             gap: 3rem;
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             margin-bottom: 2rem;
         }
         
@@ -77,9 +77,8 @@
             font-size: 24px;
             line-height: 24px;
             color: #1C2127;
-            font-family: 'TitlingGothicFB Normal';
-            width: 80%;
-            /* background-color: red; */
+            font-family: sans-serif;
+            /* padding-left: 20rem; */
         }
         
         .card-info {
@@ -97,13 +96,13 @@
         }
         
         .tr-card {
-            /* background-color: green; */
             width: 90%;
-            margin: auto;
+            /* margin: auto; */
+            /* background-color: red; */
+            /* padding: 3rem 15rem; */
         }
         
         .td-card {
-            /* background: red; */
             width: 50%;
             /* margin: 0 auto */
             padding: 2rem 3rem;
@@ -114,17 +113,22 @@
         }
         
         .break {
-            padding-top: 3rem;
+            padding-top: 1rem;
         }
         
         .blog {
-            padding-top: 3rem;
+            padding-top: 1rem;
         }
         
         .container {
             display: grid;
             grid-template-columns: auto auto;
             column-gap: 2rem;
+        }
+        
+        .icon-right {
+            /* padding: 4rem; */
+            padding-top: -3rem;
         }
         
         .google {
@@ -161,21 +165,20 @@
             /* background-color: yellow; */
             /* padding-top: 2rem; */
             padding-right: 20rem;
-            /* background-color: #1C2127; */
             height: 2rem;
         }
         
         .bottom-inst {
             padding-left: 20rem;
-            /* background-color: red; */
+        }
+        
+        .card-learn {
+            padding: 5rem;
         }
         
         .table-footer {
-            /* background-color: green; */
             height: 3rem !important;
         }
-        
-        .footer-icons {}
         
         .google-play,
         .app-store {
@@ -186,7 +189,25 @@
             margin-right: 1rem;
         }
         
-        .footer-layer {}
+        .footer-layer {
+            padding: .5rem;
+        }
+        
+        .footer-twitter {
+            padding: .5rem;
+        }
+        
+        .footer-linkedin {
+            padding: .5rem;
+        }
+        
+        .footer-instagram {
+            padding: .5rem;
+        }
+        
+        .unsubscribe {
+            color: black;
+        }
     </style>
 </head>
 
@@ -213,9 +234,23 @@
                 <hr />
             </div>
 
-            <div class="group5">
-                <img src="./resources/Group5.png " />
 
+            <div class="blog">
+                <table>
+                    <tr>
+
+                        <td>
+                            <img src="./resources/Group5.png" alt="">
+
+                        </td>
+                        <td>
+                            <h1>What's New</h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="group5">
                 <p class="lorem">
                     Lorem ipsum dolor sit amet consectetur. Mi erat canvallis justo faucibus eget <br /> suspendisse parta est. Ipsum diam in arcu donec cursus non velit.Vestibulum <br />aoreet lectus actellus pellentesque nunc. Mauris quam lectus erat
                     dictum arcu <br /> quis purus euismod egestas. Ipsum diam tellus iaculis cras. Non sed vulputate
@@ -237,8 +272,10 @@
                             </p>
 
                             <div class="more">
-                                Learn more <i class="fa-solid fa-chevrons-right"></i>
+                                Learn more <img src="./resources/fi_chevrons-right.png" alt="" class="icon-right">
                             </div>
+
+
                         </div>
                     </td>
                 </tr>
@@ -249,12 +286,12 @@
                 <tr class="experience">
                     <td class="td-left">
                         <div>
-                            <img src="./resources/green.png" alt="" />
+                            <img src="./resources/blue.png" alt="" />
                         </div>
                     </td>
                     <td class="td-right">
                         <div>
-                            <h1 class="card-title">Better Experience</h1>
+                            <h1 class="card-title">New UI</h1>
                             <p class="card-info">
                                 Lorem ipsum dolor sit amet consectetur <br /> Omare vitoe nisi at ultrices <br /> consectetur tristique at imperdiet. Tortor <br /> integer malesuada lectus fringilia aliquam.
                             </p>
@@ -272,19 +309,18 @@
                 <tr class="experience">
                     <td class="td-left">
                         <div>
-                            <img src="./resources/green.png" alt="" />
+                            <img src="./resources/yellow.png" alt="" />
                         </div>
                     </td>
                     <td class="td-right">
                         <div>
-                            <h1 class="card-title">Better Experience</h1>
+                            <h1 class="card-title">New UI</h1>
                             <p class="card-info">
                                 Lorem ipsum dolor sit amet consectetur <br /> Omare vitoe nisi at ultrices <br /> consectetur tristique at imperdiet. Tortor <br>integer malesuada <br />lectus fri.
                             </p>
 
                             <div class="more">
-                                Learn more <i class="fa-solid fa-user"></i>
-
+                                Learn more
                             </div>
                         </div>
                     </td>
@@ -302,7 +338,7 @@
                     <tr>
 
                         <td>
-                            <img src="./resources/thoughts.png" alt="">
+                            <img src="./resources/Group6.png" alt="">
 
                         </td>
                         <td>
@@ -329,11 +365,19 @@
                     <h1 class="card-title">Volatility and crypto volatility</h1>
                     <p>Lorem ipsum dolor sit amet consectetur. Ornare vitae nisi varius at ultricies consectetur tristique at imperdiet. Tortor integer malesuada lectus fringilla aliquam.</p>
 
+                    <div class="more">
+                        Learn more<i class="fa-solid fa-chevrons-right"></i>
+                    </div>
+
                 </td>
                 <td class="td-card">
                     <img src="./resources/bluecard.png" alt="">
                     <h1 class="card-title">Volatility and crypto volatility</h1>
                     <p>Lorem ipsum dolor sit amet consectetur. Ornare vitae nisi varius at ultricies consectetur tristique at imperdiet. Tortor integer malesuada lectus fringilla aliquam.</p>
+
+                    <div class="more">
+                        Learn more<i class="fa-solid fa-chevrons-right"></i>
+                    </div>
                 </td>
             </tr>
             <tr class="tr-card">
@@ -341,13 +385,23 @@
                     <img src="./resources/bluecard.png" alt="">
                     <h1 class="card-title">Volatility and crypto volatility</h1>
                     <p>Lorem ipsum dolor sit amet consectetur. Ornare vitae nisi varius at ultricies consectetur tristique at imperdiet. Tortor integer <br> malesuada lectus fringilla aliquam.</p>
+
+                    <div class="more">
+                        Learn more<i class="fa-solid fa-chevrons-right"></i>
+                    </div>
                 </td>
 
                 <td class="td-card">
                     <img src="./resources/bluecard.png" alt="">
                     <h1 class="card-title">Volatility and crypto volatility</h1>
                     <p>Lorem ipsum dolor sit amet consectetur. <br> Ornare vitae nisi varius at ultricies consectetur <br> tristique at imperdiet. Tortor integer <br> malesuada lectus fringilla aliquam.</p>
+
+                    <div class="more">
+                        Learn more<i class="fa-solid fa-chevrons-right"></i>
+                    </div>
                 </td>
+
+
             </tr>
         </table>
 
@@ -359,20 +413,20 @@
 
 
         <div>
-            <table class="">
+            <div class="blog">
+                <table>
+                    <tr>
 
-                <tr>
-                    <td class="bottom-img">
-                        <img src=" ./resources/thoughts.png " alt=" ">
+                        <td class="bottom-img">
+                            <img src="./resources/thoughts.png" alt="">
 
-                    </td>
-
-                    <td>
-                        <h1 class="bottom-img ">Stay Inspired</h1>
-
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                        <td>
+                            <h1>Stay Inspired</h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
             <div>
                 <div>
@@ -419,6 +473,9 @@
             <div>
                 <p> 27a Road 11, Ikota Villa Estate, Lekki-Epe Expressway, Lagos +2348166106863, +348135718084</p>
             </div>
+
+            <a href="#unsuscribe-link" class="unsubscribe">Unsubscribe</a>
+
         </div>
     </div>
 </body>
