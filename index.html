@@ -141,7 +141,7 @@
         }
         
         .body {
-            width: 45%;
+            width: 60%;
             box-shadow: 0px 1.0566px 42.57px rgba(28, 33, 39, 0.08);
             margin: 0 auto .5rem;
             background-color: #FFFF;
@@ -190,15 +190,31 @@
             width: 50%;
             background-color: blue;
         } */
-        
+        .table-experience{
+            /* background-color: green; */
+            width: 100%;
+            margin: auto;
+            /* background-color: red; */
+        }
         .experience {
-            gap: 3rem;
+            /* gap: 3rem; */
             margin-top: 3.5rem;
             margin-bottom: 2rem;
+            /* background-color: red; */
+            width: 100%;
         }
+         @media only screen and (max-width: 768px) {
+        .experience {
+                      margin-top: 0rem;
+
+            margin-bottom:1rem ;
+           
+        }
+      }
         
         .td-right {
-            /* background-color: red; */
+            /* background-color: blue; */
+            width: 48%;
         }
         
         .more-container {
@@ -209,7 +225,22 @@
         .td-left {
             margin-right: 50px;
             padding-right: 1.5rem;
+            width: 48%;
+            margin-right: 5rem;
+            /* background-color: yellow; */
         }
+         @media only screen and (max-width: 600px) {
+        .td-left {
+                display: block;
+            }
+            .experience {
+                display: block;
+            }
+            .td-right {
+                display: block;
+                width: 90%;
+            }
+      }
         
         .card-title {
             font-weight: 700;
@@ -241,7 +272,7 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 20px;
-            color: #555C63;
+            color: #555C63;width: 90%;
         }
         
         .more {
@@ -346,7 +377,7 @@
             font-weight: 500;
             font-size: 15px;
             line-height: 26px;
-            background-color: red;
+            /* background-color: red; */
         }
         
         .bottom-photos {
@@ -355,12 +386,7 @@
             height: 2rem;
         }
         
-        .bottom-inst {
-            padding-left: 30rem;
-            /* width: 38%; */
-            margin: 0 auto;
-            /* background-color: red; */
-        }
+       
         
         .card-learn {
             padding: 5rem;
@@ -406,7 +432,7 @@
         }
         /* MEDIA QUERY */
         
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 800px) {
             .body {
                 width: 97%;
             }
@@ -416,25 +442,14 @@
             .card-title-one {
                 display: none;
             }
-            .td-left {
-                display: block;
-            }
-            .experience {
-                display: block;
-            }
-            .td-right {
-                display: block;
-            }
+            
             .tr-card {
                 display: block;
             }
             .td-card {
                 display: block;
             }
-            .bottom-inst {
-                padding-left: 4rem;
-                background-color: red;
-            }
+           
             .bottom-photos {
                 display: block;
                 padding-left: 4rem;
@@ -450,9 +465,7 @@
                 margin-left: 0.7rem;
                 /* display: inline-block; */
             }
-            .footer-body {
-                width: 80%;
-            }
+            
             .app-store,
             .google-play {
                 margin-left: 5rem;
@@ -532,6 +545,92 @@
             display: inline-block;
             /* background-color: red; */
         }
+
+        /* pasted */
+        /* I pasted these new classes. Everything here is for the footer. I renamed the classes by adding-c so that some css classes above will not affect them. Please study everything I did here. It's not perfect but just look through it */
+         .footer-body-c {
+        width: 50.5%;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 500;
+        margin: auto;
+        /* background-color: green; */
+      }
+      @media only screen and (max-width: 768px) {
+        .footer-body-c {
+          width: 80%;
+        }
+      }
+
+      .bottom-first-c {
+        /* background-color: red; */
+      }
+
+      .table-footer-c {
+        height: 3rem !important;
+      }
+
+      .bottom-photos-c {
+        /* background-color: red; */
+        width: 63.8%;
+      }
+
+      .footer-icons-c {
+        /* background-color: green; */
+      }
+      @media only screen and (max-width: 768px) {
+        .footer-row-c,
+        .bottom-photos-c,
+        .footer-icons-c {
+          display: block;
+        }
+        .bottom-photos-c {
+          width: 100%;
+        }
+        .footer-icons-c {
+          /* background-color: green; */
+          /* I think there are some extra spaces on the icons so I'm using this to manually adjust the icons container to the left */
+          margin-left: -0.7rem;
+        }
+      }
+
+      .google-play-c,
+      .app-store-c {
+        background-color: #071c35;
+        padding: 0.5rem;
+        height: 1rem;
+        border-radius: 4px;
+        margin-right: 1rem;
+      }
+
+      .footer-layer-c {
+        padding: 0.5rem;
+      }
+
+      .footer-twitter-c {
+        padding: 0.5rem;
+      }
+
+      .footer-linkedin-c {
+        padding: 0.5rem;
+      }
+
+      .footer-instagram-c {
+        padding: 0.5rem;
+      }
+
+      .email-bottom-c {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        color: #1c2127;
+        margin-bottom: 228px;
+      }
+
+      .unsubscribe-c {
+        text-decoration: underline;
+        color: #1c2127;
+      }
     </style>
 </head>
 
@@ -582,11 +681,11 @@
 
             <div class="group5">
                 <p class="lorem">
-                    Lorem ipsum dolor sit amet consectetur. Mi erat canvallis justo faucibus eget <br /> suspendisse parta est. Ipsum diam in arcu donec cursus non velit.Vestibulum <br />aoreet lectus actellus pellentesque nunc. Mauris quam lectus erat
-                    dictum arcu <br /> quis purus euismod egestas. Ipsum diam tellus iaculis cras. Non sed vulputate
+                    Lorem ipsum dolor sit amet consectetur. Mi erat canvallis justo faucibus eget suspendisse parta est. Ipsum diam in arcu donec cursus non velit.Vestibulum aoreet lectus actellus pellentesque nunc. Mauris quam lectus erat
+                    dictum arcu  quis purus euismod egestas. Ipsum diam tellus iaculis cras. Non sed vulputate
                 </p>
             </div>
-            <table>
+            <table class="table-experience">
 
                 <tr class="experience">
                     <td class="td-left">
@@ -600,7 +699,7 @@
                         <div>
                             <h1 class="card-title">Better Experience</h1>
                             <p class="card-info">
-                                Lorem ipsum dolor sit amet consectetur <br /> Omare vitoe nisi at ultrices <br /> consectetur tristique at imperdiet. Tortor <br /> integer malesuada lectus fringilia aliquam.
+                                Lorem ipsum dolor sit amet consectetur  Omare vitoe nisi at ultrices  consectetur tristique at imperdiet. Tortor integer malesuada lectus fringilia aliquam.
                             </p>
 
                             <table>
@@ -610,31 +709,32 @@
                                     </td>
                                     <td>
                                         <img src="./resources/fi_chevrons-right.png" alt="" class="icon-right">
+                                        
                                     </td>
                                 </tr>
                             </table>
-
+ 
 
                         </div>
                     </td>
                 </tr>
 
             </table>
-            <table>
+            <table class="table-experience">
 
                 <tr class="experience">
                     <td class="td-left">
                         <div>
-                            <img src="./resources/blue.png" alt="" />
-                            <!-- <img src="https://lh3.googleusercontent.com/RXahYMKZQIg-iKQtlyMhfA5-OKtRyVnxROG4JuvpVquZg7LdnQukdHXYcTVf2erGYeOeQuR53uAifaIHllsjkrCpRC7JFHOgg1-gt0dfCKV8GAu7z6-7YnUiI3TtVsAudcJEITWTK8sWwDIirF3k5SrUe_u9XpxbowEa6eAna7aQ2g4PZW79Mgh6kXL4JIISRZZOKuQFVv9ezt3fidWl_UcAcLorT_rnPvD7uVZMokdxrkhqpCuHL9ehfFLJULjnytNHNhejH-r2dugQ_3SU0mNvuW5G8_owiU98CN3y9BkNe0O8ErEEtg5I_a8Ow47Zx-ELt_ae7zwjTsjTjoKdL44slUD_KHkFSQVO6vYbZXJ0Sk9QNbSpJLsmOC8w5BQqVtiwn72PauKWGhZp1N5rCVTmfEqCguSX6jO4ilG_V--vmAFBTb1jOVMyM8XbvfYfRNRw2svPgbXCdF9odqO7f_Yl3-hch9ZcLP9mO32e-eU1qGmDwf1wLZI4Zo6As-cPekf8WS_9MhxMFwvEtdHUxlK9dTnBBc3tJOAxyUH3ibG6Tnv_RPuTUTjHkjY2bPjnBflNPEpE7jS6-uqMjBGn2WRPve-goiuHR4PJcoBS3bNc8I2kRK2HEsvR1H-8FZvDcLRk3vEgbPfY_tcRRuRH-h18aL425dSuXCh7TVRn3QgWWkitviisCK0xYhjmmkN-hiDuAJ63Jv_lhufKZ3yPWwEAZ-2Ve_aMToTkIdUUPTF1EeCk6adQ77uf3i1K89JVSDgSGtz1DrCoApKCATxkNFznHRsrQHMEhCKqspXgLTNWwSd8CfpyZ3eMBDtd1pEFlPa5edQzSu0qT0G92CdyKV7N6EC5VoEQn_RN0s7tvimlHEnd2qwH6Qwixh9XujGJiIt8J_nVIM5EFC4rwjztKksHZl-VtB7M2U7YMfC17zvM=w327-h222-no?authuser=0"
+                            <img src="./resources/green.png" alt="" />
+                            <!-- <img src="https://lh3.googleusercontent.com/U-p0VJY9_uHhEOT-NkDv24D2PLKN4Z3GQZo_w9xa1INzBaeju-KhuvqdPNjbG-SKh_BIMOd-8OtKHMOH1PpXx38DFkwYESsqbfaaDMwngGjOdb1LHGw47JuJv7fQ81f6hpZdfDXPWuMgkmsPatwQKUZ0qnmBoVHL_uxT0PRmM9XSKIYXIQvgILJNUy6TXEZ92m5Zu1-KQIi0CyR0zKQWI3g3oNiUrzI4xWwoDxuxkrQkbrbOgV6hhMkNyMHX7kJlnqAWYqbqErR_D1AkT3SFzlO43il3EdeOJ6hg3meukIL-mQVK4nZAfMZkzIAuGEjwokzuGZol8nK3PhdvgufZrlPFBZ73_dmqj0jsrCbfIyUJLx_XWHg5KhN9YPf8GcPkOm2KRc2uB9zG5MzdCv8prCR-NkTq2GgsewmFop2RFzddavgrdMLzWyq0tYgBcBdvI2wToIJ5X7ESnByUsfu1vb5u6YEfhJjmB84ESn80cfuU_lJAK9LQjDQUggmufnfccIkJH-zpSR9iX_HU0ydcMxHkrt8aBrmWvzTDzdtDxPlOIVZUTAafu_GSdiE3DtejDYPzNMajbsUx2jh5x0VfUJNfa61OTQRHrO_Xce5GZoRLTxN6QfZzYSEdsUeuBzft3IdaGZk5XDOFGS51h47eJWfrZ6Twzwf1FESqzXGlHTfXRohywIqrelOpcNzgFLaggBLn31eW-Asv6QZY-TyuxRWjHfGaNlMVQUfO2iD-YPKZy68O1Kktko_QGMb5OAawYqkbr9bbVB17h48brxOmSjxbts08Li7T6hX8CXDgZQ1bnckHpUmU1mhR-FfWkhNCBtLz5YnAZIY69BbLwHW8ptZtsJOzhFl7mwjZv8OFQZ3MmayVkdUGAPbF5PrwLQ2LE8XoOv59W8fFyFY23X2JDCLHTrRQX8BRSvZDNHrHaaq5=w295-h200-no?authuser=0"
                                 alt=""> -->
                         </div>
                     </td>
                     <td class="td-right">
                         <div>
-                            <h1 class="card-title">New UI</h1>
+                            <h1 class="card-title">Better Experience</h1>
                             <p class="card-info">
-                                Lorem ipsum dolor sit amet consectetur <br /> Omare vitoe nisi at ultrices <br /> consectetur tristique at imperdiet. Tortor <br /> integer malesuada lectus fringilia aliquam.
+                                Lorem ipsum dolor sit amet consectetur  Omare vitoe nisi at ultrices  consectetur tristique at imperdiet. Tortor integer malesuada lectus fringilia aliquam.
                             </p>
 
                             <table>
@@ -647,26 +747,28 @@
                                     </td>
                                 </tr>
                             </table>
+
+
                         </div>
                     </td>
                 </tr>
 
             </table>
-            <table>
+            <table class="table-experience">
 
                 <tr class="experience">
                     <td class="td-left">
                         <div>
-                            <img src="./resources/yellow.png" alt="" />
-                            <!-- <img src="https://lh3.googleusercontent.com/s6AWvkmDkvowwX-i_qhbo1L_2V0DR048yN4q1E1HzMgL4JgivwIhksnwA5joKIDUBN9VS8GAhSLto3KREDeSRayyI8M9PvsMkqzIiHHQkOnx2QCT08wmmgxSeJgERukTMLplbgxPHCKVJvN2UVGrRMUxvgnv_0TwCgt3FXk-ZSFShoyweAamV84dnyiWtCOuf4IwbqdYFiXl65HjbuOTP-YVW2PchS41foDLgJ3s3V6ZSltHdMddZEOqwUciAzQAC6m9HGlwtSm7P7LD1Ppxy3EBtnbOxwO3W8tm2qyTLOgUSPHKueOFeKcVb8o94C3Zz4OB_E1QZBhJGY6Z-Z-XhoaAeSJ57g4iNEOTGnTe5qm2NaQ0PbtX4CYAkSZ_vEm8NmkbHMm4OWzm7vu_UmrLFDPTFczlk0-0LWIMwcJRcX4-BJ4ZhxttQO4kPRMZzJu79WW8Vw7-OfoCIMjn1y2mfHYWAJqNCEJVcCl9hJCLu7ssF6NOsTbwgvJkj0FXUXWTauAh-0AnN5W_Gqle6yvHf7C3a9FFnfA_cX1kWF7AXm87UaHT2OOrUzkjWTj_w00vXOz0YRmDAgnpmQPjbyg1e5Y2SPMkN-tINkKY0ScsiPS8QBRggxcUGlWEtJGitcxH8FP4Kb_1m-lGOd_qomIq320K_dhJx_OakvIvao6T_NLwl5li_d8_CcVO84-Tc-qFu_YIBDKnLOm14vSBpp84Ye4CMjbyMGdc80H-Aw6DLRtprn4XKA5d8cvlXNdC9RPtxBc41mHqORGUMcKVUv9vXnSKZsW4ZgyyQubfQZkE54cTxnTeqDUWTFtPEUehiB5xXGhe2xr-yU1l-zPLUIG0FVdUsc1rh-HMoXHSDQCkj0bj-Ay5mKWbacNIvClCusajXs0E8DjLHA-ES4SXthYMhFQAK7w6nLzn1zwptnA0A5Ek=w295-h200-no?authuser=0"
+                            <img src="./resources/green.png" alt="" />
+                            <!-- <img src="https://lh3.googleusercontent.com/U-p0VJY9_uHhEOT-NkDv24D2PLKN4Z3GQZo_w9xa1INzBaeju-KhuvqdPNjbG-SKh_BIMOd-8OtKHMOH1PpXx38DFkwYESsqbfaaDMwngGjOdb1LHGw47JuJv7fQ81f6hpZdfDXPWuMgkmsPatwQKUZ0qnmBoVHL_uxT0PRmM9XSKIYXIQvgILJNUy6TXEZ92m5Zu1-KQIi0CyR0zKQWI3g3oNiUrzI4xWwoDxuxkrQkbrbOgV6hhMkNyMHX7kJlnqAWYqbqErR_D1AkT3SFzlO43il3EdeOJ6hg3meukIL-mQVK4nZAfMZkzIAuGEjwokzuGZol8nK3PhdvgufZrlPFBZ73_dmqj0jsrCbfIyUJLx_XWHg5KhN9YPf8GcPkOm2KRc2uB9zG5MzdCv8prCR-NkTq2GgsewmFop2RFzddavgrdMLzWyq0tYgBcBdvI2wToIJ5X7ESnByUsfu1vb5u6YEfhJjmB84ESn80cfuU_lJAK9LQjDQUggmufnfccIkJH-zpSR9iX_HU0ydcMxHkrt8aBrmWvzTDzdtDxPlOIVZUTAafu_GSdiE3DtejDYPzNMajbsUx2jh5x0VfUJNfa61OTQRHrO_Xce5GZoRLTxN6QfZzYSEdsUeuBzft3IdaGZk5XDOFGS51h47eJWfrZ6Twzwf1FESqzXGlHTfXRohywIqrelOpcNzgFLaggBLn31eW-Asv6QZY-TyuxRWjHfGaNlMVQUfO2iD-YPKZy68O1Kktko_QGMb5OAawYqkbr9bbVB17h48brxOmSjxbts08Li7T6hX8CXDgZQ1bnckHpUmU1mhR-FfWkhNCBtLz5YnAZIY69BbLwHW8ptZtsJOzhFl7mwjZv8OFQZ3MmayVkdUGAPbF5PrwLQ2LE8XoOv59W8fFyFY23X2JDCLHTrRQX8BRSvZDNHrHaaq5=w295-h200-no?authuser=0"
                                 alt=""> -->
                         </div>
                     </td>
                     <td class="td-right">
                         <div>
-                            <h1 class="card-title">New UI</h1>
+                            <h1 class="card-title">Better Experience</h1>
                             <p class="card-info">
-                                Lorem ipsum dolor sit amet consectetur <br /> Omare vitoe nisi at ultrices <br /> consectetur tristique at imperdiet. Tortor <br>integer malesuada <br />lectus fri.
+                                Lorem ipsum dolor sit amet consectetur  Omare vitoe nisi at ultrices  consectetur tristique at imperdiet. Tortor integer malesuada lectus fringilia aliquam.
                             </p>
 
                             <table>
@@ -679,11 +781,14 @@
                                     </td>
                                 </tr>
                             </table>
+
+
                         </div>
                     </td>
                 </tr>
 
             </table>
+            
 
 
             <div class="break">
@@ -862,13 +967,13 @@
 
     </div>
 
-    <div class="bottom-inst ">
+    <!-- <div class="bottom-inst ">
         <h2>Download our app</h2>
     </div>
     <div class=" ">
 
 
-        <!-- <table class="table-footer ">
+        <table class="table-footer ">
             <tr>
                 <td class="bottom-photos">
                     <img src="./resources/apple.png " alt=" " class="app-store">
@@ -889,34 +994,28 @@
 
                 </td>
             </tr>
-        </table> -->
+        </table>
 
 
         <table class="table-footer">
             <tr class="footer-row">
                 <td class="bottom-photos">
                     <img src="./resources/apple.png " alt=" " class="app-store" />
-                    <!-- <img src="https://lh3.googleusercontent.com/Ik5B-EZBFBZlBRqMKm1iH0zF2IhAj3X6VYbbtz43FAbJoGwAuSVMsT_Rh6-SB2DIcbzTESHq-KCR7gbR-i6OfNU-oCiZhiWb_emDi1JPqGSbxqww_ekLarZxj3pOKE84vHYghaAR4OVvrGzzxit2pDe19q55MpgblwnR1TVvUHnYv-x_JrjvrUqzsdrE7kJu9YcyGPD5yeBokYQFOGfUrJVaAto23sn13F-SMlujUjmKom6qko3G4dAjfoVVXKLAMkaSqunfpGoAD3oEQ0LtK1J1Xg90iRWZYxhy1F4qEwH9t7-NIs67k3M83oiP49yu69j7Oicq3PsaZhZQ6yKMASJLoEMK-Eqzv3Il5K3uBGl8TY4kFSapuMH1UEM8g-QGIzxYtLZmWF3oJv850R3Hd34e5a0B9ec7WSsd-daZyipKB2XasRWB5LmhjUBCyEchfnohltYN0_GU7xBqboocdJ7th3ndF9UMV9j84nvtGgRGba9xPOVPPcFXQR20wAphN-MUS5XjOvUdYW6Dtv_0sY_xv4g2qOPHVDumCj_4-I0HP1TBN51uEVicS1aXctxDdzhAwiXZkrmEmNqfx1FB2YkbRMalCsaC_EgqDlM902n1c1Pq2TSy74UvJfwrTJ9TqkW6UCiKtpBNI-oVcvQXp-Y4qJpYOX0z6-yEYg7pEqIyzq3et4cy8Swmsnn-7Y7LruvZDiBxdPz1CnOFjqvmgdQsJ3Akv-QK4PRJGqraWR2Q7u-RhzscYCqATvl46O0bu0tG7lZ9FKxu0llQPMwHXOQtDH20c1lJ3gbXa2bOkdbv-_AXOPOh153J8NMIH9LoFzxYWWms4ttI7SqZu4S7Nu0mIqHh1vwGLxHA0b482HYt8hiBuDYMBvVApmmiJKvytqunmbI361Hq0CrOtTFYshwQUIZZxGmJTrkW59E-P52z=w77-h21-no?authuser=0"
-                        alt="" class="app-store" /> -->
+                  
                     <img src="./resources/google.png " alt=" " class="google-play" />
-                    <!-- <img src="https://lh3.googleusercontent.com/Llu2bJASti2qYAM2KrR0FPjEgj1oIZhFEM6tfT-JU26q3IdWPp7okT0NducXXulSGAX_D6hbqn2lxn1_wQlUj-FYU3dIsFpvH3rKMcVeA5rzLTnYaU4W9RyUP0lkWbZW6VnXZBMPj-zWTIGrCqR33dCcDrK7sj6q2jA5h19wxcXYai2LRIoJwc0JpY13-wUVwLjmgjRcwfsekl00uVQG4UeIka-HUPbfcIi0-qfAUavxigzuZcWZJ8Y1WQSZh_NbUyPjaZ7_rpSCbEAbmpn15hUxiPGCR5lzn7-hdT-3uoZot37720veY9vvzQ9512U8mOoAoXtXXPQ0WawQ3MGp9IjA4KmRMSNhWcj39qBuuGiHOW9H54e4FbRRLtpsHMxDDiNmnore2jot7_qyeeaXRxqd4ERBtyHvJldimp7BAUm9pBifdA1svuO0O2OcUnuCq2sg05kAaR3I6-HshTHiZU0SJ97ZrciGUAUFGJr83pc369OMo6NGrn8KabBVbXRAkga-oKtXSY_dwl7CPYmbVkF3_Z0SOxAlqbpl5Y0MafvIh9T1ZMeEiw3k02W4ZGQxHO1z-qblDN4XyEcZGgdbbqo-kb9w9pnNsG1ULdUp2tcvz4as4FYGEjEDKjDN9iadNp22jDJmGf6LcNazERAc6hN24z81EgriXKbufpabkJJOHIVFj_aYOqnKAHzw7Uv79ULGJZUfmNwGwryeexbFEQ1ewaPKD3E8VZC7WyP-aCU_8wgWMDmEMfQihic6nTubuo5gc-uIwTcOpkTxhoxZIGy-gszeEp2ancV3wzwgdBrbuMmSiZXwM5K3LJariJYgS9K0IsvZxIjmoUlvpZJAWIfgNXAtxIUGgnfbWhqWZY5dIcKIpekSdD679X_VZ_3jITgyg52WtMr0XsItftckTqdvyDfZ33YvwbFNd7hWDZRG=w91-h24-no?authuser=0"
-                        alt="" class="google-play" /> -->
+                
                 </td>
 
                 <td class="footer-icons">
                     <img src="./resources/Facebook.png " alt=" " id="footer-layer" class="footer-icon" />
-                    <!-- <img src="https://lh3.googleusercontent.com/G6zB616Sc96YaioFA2tzES3cg5FhsBAwTyxOA-kmhLyq-qc34TzFd8MTXeUOkjjxEGeva-7k9wUUm4Xwke70hebENvHHKhXhkM32gk4NDx2BnqOkxmLz9HcPJvOe_3mAiOw9RsNzOa_RGhN5CwYmgp9xzMQhu4uiSfvBrLKqQnLhbEGDeH-HPx-_XpTJoeoSx_uizGT4W2582m9PJGjxW_uMG87Jp-NbSPPSzHomXOdCKovUZKxuTOndhvljUiZmAnjGbJyvWVB_wEbOiCRDMebIPJ7qLuS2RRoI4xBzEFIRm7Yq37rAce4AeCzLxCDGpPLPDsnhqhreQ8I0LiGQan7JPowmGNPGrjxTLEvJpFm3LwDC8slmHwAvOzcpvJ2TxxZcLfxm8kZjtPpNHw8KRdapJlSNa9TilVdlqufl0GDYmpgrKtFWz6U2BtxObkFThCFC6q6Op8rpTaPwI-AZPJlOS4iX8hEz2axMJ-D3HO3PbVF3SaEuRhVIvPm3YQpTgIkzvbVaEvEWAIUFzX9ZnKTmlmnQTMDSoHUrOhEXYXIchR_k1aCHypnytydWSHqnQ_ig1Asx9IkRFKOHd8HriCSegxKP0c0zM5AzkEFuM9dK3ebR0X0LSH9TSXNJbvLgSqAiVSVcNWcnBiAGWiAXUyIAp53wubCmrpza4veHyJPfrhUVW7tabl8WDY0wnTwigqMa_nPOohjgsk5DqVwwiU12UthxiiIrve3qzVshM5vMXFNvc5UYZWoTH8nyvYc1mcAadAyMsau2jXtcb5mLUGSPqnpw2uafEJkXD_qgMHF-0r_aqZNroSq7MMcF6MEYATsBh9K7cIescMIXQHWbrkcRX9ngKLQQkgVs-4IE-sUcsAFZ4mskpeqIMYqUhlqpJNkKGW33Cw8gW6SrOMj4ooYMd-wCqB-6wl-_qn7A9ANI=s40-no?authuser=0"
-                        alt="" id="footer-layer" class="footer-icon" /> -->
+                    
                     <img src="./resources/Twitter.png " alt=" " id="footer-twitter" class="footer-icon" />
-                    <!-- <img src="https://lh3.googleusercontent.com/TynJm4j-YO0uPG8r0Yx9mLEnj9dXwcGivoGtk7up0drxUwY1I-WEnISJNDHvrq8v-bpWVPBcprTKGFO6ZMzQ04tPCWSopXTsQIyX1T_Uio2Xa4-xSFDbs7K6uTeMVeSjWPVyxW_EZeltvDLfbi6ok7YWFhEWHKkhMpvsQUiIa1cl1kHsvzwbr8IOU0XXLepIGxvnt6nlC4GRV6kdO0TQFulTMHdqJBGL7wokQRmeIDaqDrOmljxCCkVJ2N7XBMMjkD_Bo6gNBkDPfcGV-fPVqamWfjnb7RAXVAgOYry4sJCycKj2xaFMa_Yh71c6XQNFhLcp4hwlomLmBzc-jmfVmmIwKP0-IvBH15iXeqGGF7-0epm6Q5Y5p_i60SKtFuCVfm2KItRsk3c5XRIhtGKDCKrjsgf3bbba08mQ-eLU4Fp0gy-_-djXRemJKqwflUzaorX3_vCEcqrpHEQWLTpcixG5Arj0TVKIzBzroRIdfClilS-JhQT303Z6drqlZWDhfO7bGArjepr5UOwj9BVfzUbFYwYam1SYFRr1g-he3APMOwa_Ah00GZuFfv_JZiIHoSSOlzAMGtHScty-EqL_3Ar8e52OnwXrx0_fU8VPE3PmYObkfHrlCTp2Rm9SvLx_dW3JTUCuurDdT0OMG53mE-Iy2FNBN4PMAlVDJT9kfedVU2OTFPw-M5XQ45iHNKXe02htBkMhC4YalNR4et_hGP4jL-JonPfzYHtEe8ztqJaRYVCums3qhu8BpSykEUUE50kVTi3fogONQkoPsVK5_nervsyhWOZGNQWao8tKTV9-esPj4kcscaKga9R5Wlwmt9Z_4R6mbCU6utNm-5heBjEc-Ldx0eckKY-RK9mYw7-C6ZEQD3wJ_kW3ChiIfHSGJo3YO1NULcZ3Xji57enimoVnGLiNwMEjR-dQfmZ7QPDU=w42-h40-no?authuser=0"
-                        alt=" " id="footer-twitter" class="footer-icon" /> -->
+                   
 
                     <img src="./resources/Linkedin.png " alt=" " id="footer-linkedin" class="footer-icon" />
-                    <!-- <img src="https://lh3.googleusercontent.com/MLl_Puh4MEtu1ozEXG881cbR9Sy9pTlVFEIP6nRUceC5bllCVqbqZLbtj6trjWlaM6Dd1TJZzCsBUJ-nN_5wCWbG4Dm4LyUAof3cIMrV1yAfcS7eMLiGBctAhn8tO3q25NEFJan72v-2u-Jp97teBrFkPObG50WDm5X083txRB9pASkb6Uv_YC-goIX5JsDqpYZMhA92DsJIJp5Lvo93OwfQNpob9J7PCN9kg02pPX1jd__l7DSXar9R0rnC2j2JBpopDCishxuLEpPGwkbcNdQEu2Y0sQFPK_ON9Jc8q7Ep6f5P1TzDZz1DOBWYzC7lQmEN6MVu3-LMrkgvCfC1ISFdTi3D09rRhgTMPsf3hDjtRvPefHwgOLwNJCM8np5NurP3DeEe1NgJW4KtVS9G5pS-0sVS4E7wNVyMFy0kkXI9xSmDAcD5_110BUoyPZWlH2XdwQYGZQOuMwSHeA4Oha9mBvjAfWuNiKr7YFaSX1OLwTTe6fJNZ8SORYNjzSDMH5mjum0ygTJGt2U6JI5Zi0KZqjLVVjEcxWm293RN5j7eencskvMPatz5riklG-kaGTOnxcnnsuddf2NYzDpUlWpwJr1_EQFLPDyNeocT70_nWTXNuAWndx4jv8gy3h6yEc9k3dQNMiQ2F7B0dBfwc5BMkkcbwcxJj9KJ2UpwcIS27PcsXh8aZsMOI3_0qs3ipmCaMHarEn3S1150NqwYWsEtOXRNVexdffeYXfboXiKsK4TD8E5nZV5oitCJ3eyOABTtoCDKZLC3AQv8GdzocYaytuEsSsK6V8V637VaP2XwTuO8PFTRZ-RMElYLDI2xDSut2cVdGbeEEmGdVp1pLbvNW4cjN3T2ZZWuJtwEc2LxFupKBYOuR-ucu0Up4BAAM57bQbtVbmjfqkCUm-4nhbKBrk7RbCgEaBpvV1YDv0eA=s40-no?authuser=0"
-                        alt=" " id="footer-linkedin" class="footer-icon" /> -->
+                    
                     <img src="./resources/Instagram.png " alt=" " id="footer-instagram" class="footer-icon" />
-                    <!-- <img src="https://lh3.googleusercontent.com/Zq_55Oxg-wsZPNKBk4cG507XB9jRnHAKvdnmrnRbFgc2r_pwMWjAKypImNHJbhpzwRqdKQ2K9-FJUo4Qp6m7IMOfROBykwkgyOjoWt0z5-fk8sIXgFOntoQ--kHRF_e2NSVhOAQfnB0FOnfopjeRomGnlCM53aXSqinX_QS1-GyGQJu-PiFEaS2rKe_xaM7m8y9efzoD3pKBos-BS4UMJs14Go4a282v_U6Js_QRPrJTiBxS4kgxZ5yzX6rPAgTUSAurTTauss57sHdWDpUi-oADUYGK4c1buy6969BwAtpTtuC7ce2OM2-06YYG2TBcZYFg3zVqrFTPyntSAMaqSGFTecGaX5m0DHHj8YDFwjT0UUDvX5pFCHS7OGiJk6INPBYavLXLxMGjxArOYpXH_6qTpeBEfJdPI8pNZbpkWd75EFmIqsSt7Uy8czdyFDU3Q116rRiN7Q-IjbsSFioDx5a7RFG4h978SRBB-_XqRUdH0pm8zs606lyTPbwWqqFYvx1U05Y4uetHcj-RR1Q5qIDUoQfeSS25jUO_eZqGEKP5BoQu2W3DT9MtxZoGPKETxbC3rXp0XuJHJIfmdARIxZ1WwYDN8ATrzAqG7gI1J95zkKlqqenIog-_Splw78Pd-9IE9obnhQxPm3UZGreq-lV3I-VpwCMQ1PvF7bjiNgoSgwUYGh94x_-49Ufg7DlH3gbOt7wRJw3DfFo4mPUwbUu45qCdKBJqcCfBf2IIn1NwyAK5vO8whyKSPDnpsAlIhaMnSxPHVH6k1XuGNESv2kNTVbS9x5zVlEgWNAQSHnBVPpBeOr_GkfWJ6vO8B4mMFWcKUE6OYHJvxrZVDAH7F0oz2xvQbLeTnPJR_H6QsYmtVoe-dK5mmOjzwP2q2yhJBtUz79zL_5QKIxcuzzG35TwX9zWSPgVB5gW1XKrxIbPk=s40-no?authuser=0"
-                        alt=" " id="footer-instagram" class="footer-icon" /> -->
+              
                 </td>
             </tr>
         </table>
@@ -932,8 +1031,62 @@
 
             <a href="#unsuscribe-link " class="unsubscribe ">Unsubscribe</a>
 
+        </div> 
+      </div>  -->
+
+           <!-- added -->
+        <div class="footer-body-c">
+      <div class="bottom-first-c">
+        <div class="bottom-inst-c">
+          <h2>Download our app</h2>
         </div>
+      </div>
+      <table class="table-footer-c">
+        <tr class="footer-row-c">
+          <td class="bottom-photos-c">
+            <img src="./resources/App2.png " alt=" " class="app-store-c" />
+            <img src="./resources/app1.png " alt=" " class="google-play-c" />
+          </td>
+
+          <td class="footer-icons-c">
+            <img src="./resources/Twitter.png" alt=" " class="footer-layer-c" />
+            <img
+              src="./resources/Twitter.png "
+              alt=" "
+              class="footer-twitter-c"
+            />
+            <img
+              src="./resources/Linkedin.png "
+              alt=" "
+              class="footer-linkedin-c"
+            />
+            <img
+              src="./resources/Instagram.png "
+              alt=" "
+              class="footer-instagram-c"
+            />
+          </td>
+        </tr>
+      </table>
+
+      <div class="email-bottom-c">
+        <!-- There's no need warpping paragraphs in divs -->
+        <p class="roqqu-message-c">
+          Messages from Roqqu, including our Customer Experience team, will
+          always come from a
+          <br />help@roqqu.com email address. We will never ask you for account
+          information like your <br />password or answers to security questions
+        </p>
+
+        <p class="roqqu-address-c">
+          27a Road 11, Ikota Villa Estate, Lekki-Epe Expressway, Lagos <br />
+          +2348166106863, +348135718084
+        </p>
+
+        <a href="#unsuscribe-link" class="unsubscribe">Unsubscribe</a>
+      </div>
     </div>
+    
 </body>
 
 </html>
